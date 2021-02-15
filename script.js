@@ -1,4 +1,4 @@
-let fruits = ['Apple', 'Banana', 'Orange', 'Lemon'];
+let fruits = ['Apple', 'Banana', 'Banana', 'Banana '];
 let ul = document.createElement('ul');
 let input = document.querySelector("input");
 let btn = document.querySelector("button");
@@ -17,7 +17,7 @@ function addElement(){
     li.innerText = input.value;
     li.append(btn);
     ul.append(li);
-    input.value = "";
+    input.value.three = "";
 }
 
 
@@ -33,3 +33,6 @@ for (let i in fruits) {
     ul.append(li);
     
 }
+
+let span = document.createElement('span');
+
