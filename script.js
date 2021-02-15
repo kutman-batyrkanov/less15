@@ -33,9 +33,7 @@ for (let i in fruits) {
     ul.append(li);
     
 }
-span.addEventListener(function() {
-    li.style.textDecoretion = 
-})
+
 
 let span = document.createElement('span');
 
