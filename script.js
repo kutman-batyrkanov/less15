@@ -36,3 +36,5 @@ for (let i in fruits) {
 
 let span = document.createElement('span');
 
+li.append(span);
+
