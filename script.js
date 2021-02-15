@@ -1,15 +1,35 @@
-let fruit = ["Лимон", "Банан", "Яблоко", "Абрикос"];
+let fruits = ['Apple', 'Banana', 'Orange', 'Lemon'];
 let ul = document.createElement('ul');
-document.body.prepend(ul);
+let input = document.querySelector("input");
+let btn = document.querySelector("button");
+document.body.append(ul);
 
-for (let i in fruit) {
-    let li = document.createElement('li');
-    li.innerText = fruit[i];
-    ul.append(li)
+
+btn.addEventListener('click', addElement);
+function addElement(){
+    let li = document.createElement("li");
+    let btn = document.createElement("button");
+    btn.innerText = "Remove";
+    btn.addEventListener('click', function(){
+        li.remove();
+    });
+    
+    li.innerText = input.value;
+    li.append(btn);
+    ul.append(li);
+    input.value = "";
 }
 
-let input = document.getElementById('fruits');
-let btn = document.getElementById('btn');
 
-
-btn.addEventListener
+for (let i in fruits) {
+    let li = document.createElement("li");
+    li.innerText = fruits[i];
+    let btn = document.createElement("button");
+    btn.innerText = "Remove";
+    btn.addEventListener('click', function(){
+        li.remove();
+    });
+    li.append(btn);
+    ul.append(li);
+    
+}
