@@ -8,5 +8,11 @@ for (let i in fruit) {
     ul.append(li)
 }
 
-let 
+let input = document.getElementById('fruits');
+let btn = document.getElementById('btn');
 
+
+btn.addEventListener('click' addLI();
+function addLI() {
+    let li = document.createElement('li');
+} );
